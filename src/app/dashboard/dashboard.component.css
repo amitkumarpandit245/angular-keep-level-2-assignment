@@ -1,0 +1,22 @@
+.add-note-section
+{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.mat-input
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.note-card-container
+{
+    display: flex;
+    flex-direction: row;
+    margin: 10vh 15vw;
+    justify-content: space-around;
+}
