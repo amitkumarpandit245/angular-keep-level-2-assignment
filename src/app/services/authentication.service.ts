@@ -7,7 +7,7 @@ export class AuthenticationService {
   private authUrl:string;
   constructor(private httpclient:HttpClient) 
   { 
-    this.authUrl="http://localhost:3000/auth/v1";
+    this.authUrl="http://localhost:3000/auth/v1/";
   }
   authenticateUser(data) {
     return this.httpclient.post(this.authUrl,data);
