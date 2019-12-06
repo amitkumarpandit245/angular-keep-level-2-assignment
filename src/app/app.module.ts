@@ -24,9 +24,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/dashboard',pathMatch:'full'},
-  {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,canActivate:[CanActivateRouteGuard]}
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [CanActivateRouteGuard] }
 
 ];
 @NgModule({
@@ -36,8 +36,8 @@ const routes: Routes = [
     HeaderComponent,
     LoginComponent,
     AppComponent,
-   ],
-  imports: [ 
+  ],
+  imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -55,17 +55,17 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     [RouterModule.forRoot(routes)]
-  
+
   ],
   providers: [
     AuthenticationService,
     NotesService,
     RouterService,
     CanActivateRouteGuard
-   ],
+  ],
   bootstrap: [AppComponent],
   exports: [RouterModule]
-  
+
 })
 
 export class AppModule { }
