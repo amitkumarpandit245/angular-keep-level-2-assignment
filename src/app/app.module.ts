@@ -24,7 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'dashboard',pathMatch:'full'},
+  {path:'',redirectTo:'/dashboard',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'dashboard',component:DashboardComponent,canActivate:[CanActivateRouteGuard]}
 
@@ -35,7 +35,7 @@ const routes: Routes = [
     DashboardComponent,
     HeaderComponent,
     LoginComponent,
-    AppComponent
+    AppComponent,
    ],
   imports: [ 
     BrowserModule,
