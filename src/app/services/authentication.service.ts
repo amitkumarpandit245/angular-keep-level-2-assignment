@@ -17,7 +17,7 @@ export class AuthenticationService {
     return localStorage.getItem('bearerToken');
   }
   isUserAuthenticated(token): Promise<boolean> {
-    return this.httpclient.post(`${this.authUrl}/isAuthenticated`, {}, {
+    return this.httpclient.post(`${this.authUrl}isAuthenticated`, {}, {
       headers: new HttpHeaders().set('Authorization', `Bearer ${token}`)
     }).pipe(
       map((res) => res['isAuthenticated']))
