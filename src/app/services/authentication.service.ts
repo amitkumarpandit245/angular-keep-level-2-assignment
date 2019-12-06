@@ -10,8 +10,8 @@ export class AuthenticationService {
 =======
 
   private authUrl:string;
-  constructor(private httpclient:HttpClient) 
-  { 
+  constructor(private httpclient:HttpClient)
+  {
     this.authUrl="http://localhost:3000/auth/v1/";
 >>>>>>> 86003c8628e4b921c85994b59f02f65eab493bd9
   }
